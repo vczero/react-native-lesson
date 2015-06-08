@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>React-Native入门指南</title>
+
+</head>
+<body>
+<h1>React-Native入门指南</h1>
+
+<h2>第5篇UI组件</h2>
+
+<h3>一、目前React-Native支持的组件</h3>
+
+<pre><code>在facebook React-native的官网可以看到目前支持的组件如下：
+https://facebook.github.io/react-native/docs/getting-started.html#content
+</code></pre>
+
+<p><img src="pic/5_1.png" alt="组件列表" /></p>
+
+<h3>二、如何正确运行UI组件Example</h3>
+
+<pre><code>我们可以到react-native的github项目地址找到example,地址是https://github.com/facebook/react-native/tree/master/Examples/UIExplorer。下载react-native的代码库，将UIExplorer目录下的所有文件拷贝到你新建的项目中。其实UIExplorerApp.js就是整个项目的启动的文件。有两种方式可以启动项目：
+
+1、第一种是修改jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
+
+2、第二种就是将UIExplorerApp.js里面的代码复制到index.ios.js中，此时，注意：
+AppRegistry.registerComponent('HelloWorld', () =&gt; UIExplorerApp);
+HelloWorld是你的项目名称，如果已经启动项目，需要确保这个名称一致。
+
+项目启动后的界面如下，你就可改改UI组件看效果了。
+</code></pre>
+
+<p><img src="pic/5_2.png" alt="组件列表" /></p>
+
+<h3>三、活动指示器组件</h3>
+
+<pre><code>其实，每个组件如何使用，可以到demo中去看代码。这里做简单的介绍.活动指示器组件可以做loading,下拉刷新等
+</code></pre>
+
+<p><img src="pic/5_3.png" alt="组件" /></p>
+
+<h3>四、日历组件</h3>
+
+<p><img src="pic/5_4.png" alt="组件" /></p>
+
+<h3>五、图片组件</h3>
+
+<p><img src="pic/5_5.png" alt="组件" /></p>
+
+<h3>六、列表组件</h3>
+
+<p><img src="pic/5_6.png" alt="组件" /></p>
+
+<h3>七、导航器组件</h3>
+
+<p><img src="pic/5_7.png" alt="组件" /></p>
+
+<h3>八、导航组件</h3>
+
+<p><img src="pic/5_8.png" alt="组件" /></p>
+
+<h3>九、开关组件</h3>
+
+<p><img src="pic/5_9.png" alt="组件" /></p>
+
+<pre><code>其余组件可以查看demo运行和学习，其实就是相当于html标签，具有某种功能，习惯就好。
+</code></pre>
+</body>
+</html>

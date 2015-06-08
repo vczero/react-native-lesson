@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>React-Native入门指南</title>
+
+</head>
+<body>
+<h1>React-Native入门指南</h1>
+
+<h2>第一篇环境配置 &amp; Hello World</h2>
+
+<h3>一、前言</h3>
+
+<pre><code>最近手头的工作繁多，有研究性的项目和系统研发，又遇到同事离职，接手了框架的UI组件，不仅需要维护和填坑，还需要开发新的功能组件。因为身在H5-Hybird的框架部门，最近团队开始尝试使用React-Native来做些东西。之前也有过开发iOS App的冲动，学了点Object-c,这次正好借此机会进入App开发，以弥补自己在Native-App上的经验不足。
+</code></pre>
+
+<h3>二、环境配置</h3>
+
+<pre><code>(1)需要一台Mac(OSX),这个是前提，建议还是入手一本啦。
+(2)在Mac上安装Xcode,建议Xcode 6.3以上版本
+(3)安装node.js:https://nodejs.org/download/
+(4)建议安装watchman，终端命令：brew install watchman
+(5)安装flow：brew install flow
+ok，按照以上步骤，你应该已经配置好了环境。
+</code></pre>
+
+<h3>三、Hello, React-Native</h3>
+
+<pre><code>现在我们需要创建一个React-Native的项目，因此可以按照下面的步骤：
+打开终端，开始React-Native开发的旅程吧。
+(1)安装命令行工具：sudo npm install -g react-native-cli
+(2)创建一个空项目：react-native init HelloWorld
+(3)找到创建的HelloWorld项目,双击HelloWorld.xcodeproj即可在xcode中打开项目。xcodeproj是xcode的项目文件。
+(4)在xcode中，使用快捷键cmd + R即可启动项目。基本的Xcode功能可以熟悉，比如模拟器的选择等。
+启动完成后，你会看到React-Packger和iOS模拟器，具体的效果如下，说明你创建项目成功了。
+</code></pre>
+
+<p><img src="pic/1_1.png" alt="Hello World" /></p>
+
+<h4>四、改改HelloWorld</h4>
+
+<pre><code>Xcode里面的代码目录结构暂时不用管了，打开HelloWorld项目文件夹，找到index.ios.js文件。
+index.ios.js文件就是React-Native JS 开发之旅的入口文件了。 先来个感性的认识，修改一
+些文本，下一篇会解读里面的代码。用文本编辑器打开index.ios.js文件。
+（1）找到代码&lt;Text&gt;&lt;/Text&gt;部分：
+&lt;Text style={styles.welcome}&gt;
+      Welcome to React Native!
+&lt;/Text&gt;
+修改成如下：
+&lt;Text style={styles.welcome}&gt;
+      React-Native入门学习
+&lt;/Text&gt;
+（2）找到代码
+welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+},
+修改成如下：
+welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+    color: 'red',
+},
+(3)有web开发经验的你，上面的修改你一定会体会到些什么。点击模拟器，cmd + R,刷新视图,会看到如下截图：
+</code></pre>
+
+<p><img src="pic/1_2.png" alt="Hello World Red Text" /></p>
+
+<h4>四、恭喜你，万里长征已经走了1000步</h4>
+
+<pre><code>如果有过web开发经验的你，一定觉得很容易理解和学习React-Native，所以这一小步也是一大步
+（1000步）。千里之行，始于此步。
+</code></pre>
+</body>
+</html>
