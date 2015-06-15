@@ -8,7 +8,7 @@
 + [第4篇学会react-native布局（一）](http://vczero.github.io/react_native/第4篇学会react-native布局.html)
 + [第4篇学会react-native布局(二)](http://vczero.github.io/react_native/第4篇react-native布局实战（二）.html)
 + [第5篇ui组件](http://vczero.github.io/react_native/第5篇ui组件.html)
-+ [第6篇JSX语法]()
++ [第6篇JSX在React-Native中的应用](http://vczero.github.io/react_native/第6篇jsx在react-native中的应用.html)
 + [第7篇自己动手写组件]()
 + [第8篇模块化开发]()
 + [第10篇搭建项目架构]()
