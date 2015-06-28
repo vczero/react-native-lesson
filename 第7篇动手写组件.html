@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>React-Native入门指南</title>
+
+</head>
+<body>
+<h1>React-Native入门指南</h1>
+
+<h2>第七篇动手写组件</h2>
+
+<pre><code>React-Native的核心思想就是组件化，相当于MVC的view,因此开发应用的最佳方式就是将功能组件化。
+</code></pre>
+
+<h3>一、最简单的方式</h3>
+
+<pre><code>这里我们实现一个最简单的组件，就是邮件的末尾署名的组件。组件意味着复用，意味着统一。现在有这样一个需求，我们需要根据不同用户发送邮件时，生成每个用户的名片（即邮件末尾的署名）。
+
+1、一般一开始的实现方式如下，直接将组件内容写到功能需求的地方：
+&lt;View&gt;
+    &lt;View&gt;..........这里是当前邮件组的其它功能&lt;/View&gt;
+    &lt;View&gt;
+        &lt;Text&gt;框架研发部&lt;/Text&gt;
+        &lt;Text&gt;www.ctrip.com&lt;/Text&gt;
+    &lt;/View&gt;
+&lt;/View&gt;
+
+2、有一天，其它的部门的同事提出他们也需要在其他的地方，增加他们的邮件署名，那么你是否又会复制一份代码呢，当然不是，我们可以组件化：
+var Email = React.createClass({
+    render: function(){
+        return (
+            &lt;View style={styles.container}&gt;
+                &lt;Text style={styles.text}&gt;{this.props.name}&lt;/Text&gt;
+                &lt;Text style={styles.text}&gt;{this.props.url}&lt;/Text&gt;
+            &lt;/View&gt;
+        );
+    }
+});
+
+3、整体的代码如下：
+</code></pre>
+
+<p><img src="pic/6_1.png" alt="" /></p>
+
+<h3>二、循环一个文章列表</h3>
+
+<pre><code>要实现的效果如下图：
+</code></pre>
+
+<p><img src="pic/6_2.png" alt="" /></p>
+
+<pre><code>第一步改造我们的组件
+var Article = React.createClass({
+    render: function(){
+        return (
+            &lt;View style={styles.container}&gt;
+                &lt;Text style={[styles.text, styles.title]}&gt;{this.props.title}&lt;/Text&gt;
+                &lt;Text style={styles.text}&gt;{this.props.author}&lt;/Text&gt;
+                &lt;Text style={styles.text}&gt;{this.props.time}&lt;/Text&gt;
+            &lt;/View&gt;
+        );
+    }
+});
+
+第二步定义数据model和循环
+var App = React.createClass({
+    getInitialState: function(){
+        var data = [
+        {
+            title: "React-Native入门指南",
+            author: "vczero",
+            time: "2015-06-28"
+        },
+        {
+            title: "为什么世界不一样",
+            author: "vczero",
+            time: "2015-06-8"
+        },
+        {
+            title: "你来，我就告诉你",
+            author: "vczero",
+            time: "2015-04-01"
+        }
+    ];
+    return {
+        articles: data
+    };
+},
+render: function(){
+    return(
+        &lt;ScrollView&gt;
+        {this.state.articles.map(function(article){
+        return &lt;Article title={article.title} author={article.author} time={article.time}/&gt;
+        })}
+    &lt;/ScrollView&gt;
+    );
+    }
+});
+
+整个代码如下：
+</code></pre>
+
+<p><img src="pic/6_3.png" alt="" /></p>
+</body>
+</html>
