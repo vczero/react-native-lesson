@@ -17,7 +17,8 @@
 
 
 ###实例应用
-基于RecatNative && Node的通讯录app： https://github.com/vczero/React-Native-App
+基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App
+
 
 ###License
 
