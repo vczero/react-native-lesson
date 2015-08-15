@@ -23,7 +23,7 @@
 React Native日历组件： https://github.com/vczero/react-native-calendar
 
 ###基于React Native开发原生iOS应用
-2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native%E5%BC%80%E5%8F%91%E5%8E%9F%E7%94%9FiOS%20App(%E6%90%BA%E7%A8%8Bvczero.ppt
+2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt
 
 
 ###License
