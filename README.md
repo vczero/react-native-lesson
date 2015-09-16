@@ -20,7 +20,8 @@
 基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App
 
 ###实例组件
-React Native日历组件： https://github.com/vczero/react-native-calendar
+React Native日历组件： https://github.com/vczero/react-native-calendar              
+React Native Tab二级菜单组件：https://github.com/vczero/react-native-tab
 
 ###基于React Native开发原生iOS应用
 2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt
