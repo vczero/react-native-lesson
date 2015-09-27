@@ -68,6 +68,7 @@
 	$ npm i react-timer-mixin --save
 
 (2)需要关闭React packager命令行和模拟器，在xcode中重启项目
+
 	
 	安装完成后，我们需要完成轮播功能。因为可以到github看看swiper暴露的接口和参数。github地址是：https://github.com/leecade/react-native-swiper
 	
