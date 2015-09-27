@@ -64,7 +64,10 @@
 ###四、图片轮播
 	这里图片轮播使用的是第三方组件react-native-swiper,当然React-Native是支持transform可以直接实现一套。我们启动npm命令行，在项目的根目录使用如下命令安装模块。
 	
-	$ npm react-native-swiper --save
+	$ npm install react-native-swiper --save
+	$ npm i react-timer-mixin --save
+
+(2)需要关闭React packager命令行和模拟器，在xcode中重启项目
 	
 	安装完成后，我们需要完成轮播功能。因为可以到github看看swiper暴露的接口和参数。github地址是：https://github.com/leecade/react-native-swiper
 	
