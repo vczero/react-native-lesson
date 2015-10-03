@@ -17,7 +17,8 @@
 
 
 ###实例应用
-基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App
+基于RecatNative & Node的通讯录APP： https://github.com/vczero/React-Native-App                
+基于LBS的“附近”APP : https://github.com/vczero/React-Native-App
 
 ###实例组件
 React Native日历组件： https://github.com/vczero/react-native-calendar              
