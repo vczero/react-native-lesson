@@ -35,11 +35,6 @@ var Images = [
 	'http://images3.c-ctrip.com/rk/apph5/B1/201505/app_home_ad06_310_120.jpg'
 ];
 
-var sliderImgs = [
-  'http://images3.c-ctrip.com/SBU/apph5/201505/16/app_home_ad16_640_128.png',
-  'http://images3.c-ctrip.com/rk/apph5/C1/201505/app_home_ad49_640_128.png',
-  'http://images3.c-ctrip.com/rk/apph5/D1/201506/app_home_ad05_640_128.jpg'
-];
 var Slider = React.createClass({
   	render: function(){
 	    return (
