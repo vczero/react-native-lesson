@@ -17,16 +17,22 @@
 
 
 ###实例应用
-基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App
+基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App          
+包含示例App:             
+
++ 百灵鸟App： https://github.com/vczero/React-Native-App/tree/master/address_book
++ 附近App：https://github.com/vczero/React-Native-App/tree/master/nearby 
++ 豆搜App： https://github.com/vczero/React-Dou
++ 天黑闭眼App： https://github.com/vczero/closeEye
+
 
 ###实例组件
 React Native日历组件： https://github.com/vczero/react-native-calendar              
 React Native Tab二级菜单组件：https://github.com/vczero/react-native-tab
 
 ###基于React Native开发原生iOS应用
-2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt
+2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt         
+个人公司内部培训分享：https://github.com/vczero/sharePPT          
 
 
-###License
 
-	MIT
