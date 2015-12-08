@@ -65,7 +65,7 @@
 	这里图片轮播使用的是第三方组件react-native-swiper,当然React-Native是支持transform可以直接实现一套。我们启动npm命令行，在项目的根目录使用如下命令安装模块。
 	
 	$ npm install react-native-swiper --save
-	$ npm i react-timer-mixin --save
+	$ npm install react-timer-mixin --save
 
 (2)需要关闭React packager命令行和模拟器，在xcode中重启项目
 
