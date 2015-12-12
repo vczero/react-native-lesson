@@ -33,7 +33,12 @@ React Native Tab二级菜单组件：https://github.com/vczero/react-native-tab
 
 ###基于React Native开发原生iOS应用
 2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt         
-个人公司内部培训分享：https://github.com/vczero/sharePPT          
+个人公司内部培训分享：https://github.com/vczero/sharePPT         
+ 
+
+2015年12月12日开源中国年终盛典北京分享：http://vczero.github.io/react_native/H5-React-Native-Native.html            
+PPT:王利华-osc2015年北京年终盛典演讲.pptx    
+       
 
 
 
