@@ -39,10 +39,10 @@ React Native Tab二级菜单组件：https://github.com/vczero/react-native-tab
 2015年12月12日开源中国年终盛典北京分享：http://vczero.github.io/react_native/H5-React-Native-Native.html         
 ppt & 视频： http://www.oschina.net/question/1032619_2145293       
 PPT:王利华-osc2015年北京年终盛典演讲.pptx    
-       
-       
-       
- ## 《React Native入门与实战》图书预售地址：
+
+
+ ##《React Native入门与实战》图书预售地址：          
+ 
  http://item.jd.com/10089706582.html        
  http://item.jd.com/10089810271.html       
  
