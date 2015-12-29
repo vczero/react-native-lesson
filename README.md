@@ -43,7 +43,8 @@ PPT:王利华-osc2015年北京年终盛典演讲.pptx
 
 #React Native入门与实战》图书预售地址：
            
- 目前京东、互动、天猫均有售        
+ 目前京东、互动、天猫均有售                    
+ http://item.jd.com/11844102.html     (京东自营)
  http://item.jd.com/10089706582.html        
  http://item.jd.com/10089810271.html       
  
