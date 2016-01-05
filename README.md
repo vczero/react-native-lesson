@@ -41,7 +41,7 @@ ppt & 视频： http://www.oschina.net/question/1032619_2145293
 PPT:王利华-osc2015年北京年终盛典演讲.pptx    
 
 
-#React Native入门与实战》图书预售地址：
+#《React Native入门与实战》图书购买地址：
            
  目前京东、互动、天猫均有售                    
  http://item.jd.com/11844102.html     (京东自营)                    
