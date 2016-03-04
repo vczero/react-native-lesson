@@ -2,7 +2,7 @@
 
 ##React-Native入门指南
 
-+ [lesson1: Hello React-Native](http://vczero.github.io/react_native/第1篇hello react-native.html)
++ [lesson1: Hello React-Native](http://vczero.github.io/react_native/第1篇hello-react-native.html)
 + [lesson2: 认识代码结构](http://vczero.github.io/react_native/第2篇认识代码结构.html)
 + [lesson3: css和布局](http://vczero.github.io/react_native/第3篇css和布局.html)
 + [lesson4: 学会React-Native布局（一）](http://vczero.github.io/react_native/第4篇学会react-native布局.html)
