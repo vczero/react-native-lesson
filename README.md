@@ -48,7 +48,19 @@ PPT:王利华-osc2015年北京年终盛典演讲.pptx
  http://item.jd.com/10089706582.html        
  http://item.jd.com/10089810271.html       
  
- ![](http://img12.360buyimg.com/n1/jfs/t2230/225/1782466650/242239/49882b5d/567a1913N46db602f.png)
+ ![](http://img12.360buyimg.com/n1/jfs/t2230/225/1782466650/242239/49882b5d/567a1913N46db602f.png)        
+ 
+##《React Native入门与实战》章节分配   
+第1章：   React Native简介  王利华         
+第2章：   React Native开发基础 魏晓军     
+第3章：   常用组件及其实践 王利华     
+第4章：   常用API及其实践 王利华     
+第5章：   Native扩展 冯诚祺     
+第6章：   组件封装　王利华    
+第7章：   热更新和上架 冯诚祺     
+第8章：   企业内部通讯录应用开发 王利华      
+第9章：   基于LBS的应用开发 王利华     
+第10章：  豆搜App 王利华    
 
 
 
