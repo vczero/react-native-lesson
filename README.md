@@ -16,11 +16,13 @@ TODO:
 + [lesson11: 源码分析]()
 
 
-###实例应用
+###重点参考案例
 
-基于RecatNative & Node的通讯录app： https://github.com/vczero/React-Native-App          
-包含示例App:             
+####厕所在哪（已上线，可以在iOS App store下载）：https://github.com/vczero/toilet         
+    React Native完全开发的独立App，支持ES6语法，已更新到0.30版本，App store上线第一周破百，工具类App。      
 
+###一般参考：
++ 通讯录app： https://github.com/vczero/React-Native-App             
 + 百灵鸟App： https://github.com/vczero/React-Native-App/tree/master/address_book
 + 附近App：https://github.com/vczero/React-Native-App/tree/master/nearby 
 + 豆搜App： https://github.com/vczero/React-Dou
