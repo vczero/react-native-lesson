@@ -1,6 +1,6 @@
 #React-Native-lesson
 
-## React-Native入门指南
+## 一、React-Native入门指南
 
 + [lesson1: Hello React-Native](http://vczero.github.io/react_native/第1篇hello-react-native.html)
 + [lesson2: 认识代码结构](http://vczero.github.io/react_native/第2篇认识代码结构.html)
@@ -11,17 +11,15 @@
 + [lesson7: JSX在React-Native中的应用](http://vczero.github.io/react_native/第6篇jsx在react-native中的应用.html)
 + [lesson8: 自己动手写组件](http://vczero.github.io/react_native/%E7%AC%AC7%E7%AF%87%E5%8A%A8%E6%89%8B%E5%86%99%E7%BB%84%E4%BB%B6.html)
 + [lesson9: React Native 和 Native代码集成](https://github.com/vczero/react-native-lesson/blob/master/lesson9.md)        
-TODO:
-+ [lesson10: 搭建项目架构]()
-+ [lesson11: 源码分析]()
 
 
-## 重点参考案例
+
+## 二、上线参考案例
 
 ### 厕所在哪（已上线，可以在iOS App store下载）：https://github.com/vczero/toilet         
     React Native完全开发的独立App，支持ES6语法，已更新到0.30版本，App store上线第一周破百，工具类App。      
 
-##一般参考：
+## 三、一般参考案例：
 + 通讯录app： https://github.com/vczero/React-Native-App             
 + 百灵鸟App： https://github.com/vczero/React-Native-App/tree/master/address_book
 + 附近App：https://github.com/vczero/React-Native-App/tree/master/nearby 
@@ -29,31 +27,28 @@ TODO:
 + 天黑闭眼App： https://github.com/vczero/closeEye
 
 
-### 实例组件     
+### 四、实例组件     
 AsyncStorge调试工具：  https://github.com/vczero/rn-cook                
 React Native日历组件： https://github.com/vczero/react-native-calendar              
 React Native Tab二级菜单组件：https://github.com/vczero/react-native-tab
 
-### 基于React Native开发原生iOS应用
-2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt         
-个人公司内部培训分享：https://github.com/vczero/sharePPT         
- 
-
-2015年12月12日开源中国年终盛典北京分享：http://vczero.github.io/react_native/H5-React-Native-Native.html         
-ppt & 视频： http://www.oschina.net/question/1032619_2145293       
-PPT:王利华-osc2015年北京年终盛典演讲.pptx    
+### 五、基于React Native开发原生iOS应用
++ 1. 2015年7月18日在oschina分享PPT: https://github.com/vczero/react-native-lession/blob/master/React-Native开发原生iOSApp携程vczero.ppt       
++ 2. 个人公司内部培训分享：https://github.com/vczero/sharePPT  
++ 3. 2015年12月12日开源中国年终盛典北京分享：http://vczero.github.io/react_native/H5-React-Native-Native.html         
++ 4. ppt & 视频： http://www.oschina.net/question/1032619_2145293  PPT:王利华-osc2015年北京年终盛典演讲.pptx    
 
 
-##《React Native入门与实战》图书购买地址：
+## 六、《React Native入门与实战》图书购买地址：
            
- 目前京东、互动、天猫均有售                    
- http://item.jd.com/11844102.html     (京东自营)                    
- http://item.jd.com/10089706582.html        
- http://item.jd.com/10089810271.html       
+         目前京东、互动、天猫均有售                    
+         http://item.jd.com/11844102.html     (京东自营)                    
+         http://item.jd.com/10089706582.html        
+         http://item.jd.com/10089810271.html       
  
  ![](http://img12.360buyimg.com/n1/jfs/t2230/225/1782466650/242239/49882b5d/567a1913N46db602f.png)        
  
-##《React Native入门与实战》章节分配           
+## 七、《React Native入门与实战》章节分配           
 
 | 章节        | 标题           | 作者  |
 | ------------- |:-------------:| -----:|
