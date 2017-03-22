@@ -1,4 +1,4 @@
-#React-Native-lesson
+# React-Native-lesson
 
 ## 一、React-Native入门指南
 
