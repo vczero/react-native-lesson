@@ -1,4 +1,4 @@
-#React-Native-lesson
+**个人博客**：http://t.aissues.com/
 
 ## 一、React-Native入门指南
 
