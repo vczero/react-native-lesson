@@ -2,22 +2,21 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-'use strict';
 
-var React = require('react-native');
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-} = React;
+import React, { Component } from 'react';
+import {
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+    Image,
+} from 'react-native';
 
 
 var HelloWorld = React.createClass({
   render: function() {
     return (
-      <View style={{}}>
+      <View>
         <View style={[styles.height160, styles.row,]}>
             <View style={[styles.height160, styles.part_1_left,]}>
               <Text style={[styles.font14, styles.marTop18, styles.marLeft10, styles.green]}>我们约吧</Text>
@@ -60,8 +59,8 @@ var HelloWorld = React.createClass({
           </View>
         </View>
         <View>
-          <View style={{flexDirection: 'row',}}>
-            <View style={[styles.row, {borderColor:'#DDD8CE', borderRightWidth:1}]}>
+          <View style={{flexDirection: 'row'}}>
+            <View style={[styles.row, {flex: 1, borderColor:'#DDD8CE', borderRightWidth:1}]}>
               <View style={{flex:1,}}>
                 <Text style={{fontSize:17, color:'#EA6644', fontWeight:'bold', marginLeft:7}}>撸串节狂欢</Text>
                 <Text style={{fontSize:12, color:'#97979A', marginTop:3, marginLeft:7}}>烧烤6.6元起</Text>
@@ -70,7 +69,7 @@ var HelloWorld = React.createClass({
                 <Image style={{width:60,height:55}} source={{uri: 'http://p1.meituan.net/280.0/groupop/fd8484743cbeb9c751a00e07573c3df319183.png'}}></Image>
               </View>
             </View>
-            <View style={styles.row}>
+            <View style={[styles.row, {flex: 1}]}>
               <View style={{flex:1}}>
                 <Text style={{fontSize:17, color:'#EA6644', fontWeight:'bold', marginLeft:7}}>毕业旅行</Text>
                 <Text style={{fontSize:12, color:'#97979A', marginTop:3, marginLeft:7}}>选好酒店才安心</Text>
@@ -81,7 +80,7 @@ var HelloWorld = React.createClass({
             </View>
           </View>
           <View style={{flexDirection: 'row',}}>
-            <View style={[styles.row, {borderColor:'#DDD8CE', borderRightWidth:1,  marginLeft:1},]}>
+            <View style={[styles.row, {flex: 1, borderColor:'#DDD8CE', borderRightWidth:1,  marginLeft:1},]}>
               <View style={{flex:1}}>
                 <Text style={{fontSize:17, color:'#EA6644', fontWeight:'bold', marginLeft:7}}>0元餐来袭</Text>
                 <Text style={{fontSize:12, color:'#97979A', marginTop:3, marginLeft:7}}>免费吃喝玩乐购</Text>
@@ -90,7 +89,7 @@ var HelloWorld = React.createClass({
                 <Image style={{width:60,height:55}} source={{uri: 'http://p0.meituan.net/280.0/groupop/6bf3e31d75559df76d50b2d18630a7c726908.png'}}></Image>
               </View>
             </View>
-            <View style={styles.row}>
+            <View style={[styles.row, {flex: 1}]}>
               <View style={{flex:1}}>
                 <Text style={{fontSize:17, color:'#EA6644', fontWeight:'bold', marginLeft:7}}>热门团购</Text>
                 <Text style={{fontSize:12, color:'#97979A', marginTop:3, marginLeft:7}}>大家都在买什么</Text>
